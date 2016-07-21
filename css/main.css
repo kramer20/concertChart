@@ -1,0 +1,19 @@
+img.logo {
+  width: 160px;
+  margin: 0 auto;
+  display: block; }
+
+body {
+  background: #A7B8C8;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background: #42505D;
+  border-bottom: 8px double #6C8AAC; }
+
+h1.mainTitle {
+  color: #FF502B;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive; }
