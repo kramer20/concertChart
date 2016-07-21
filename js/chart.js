@@ -5,9 +5,9 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Cincinnati", "Chicago", "Atlanta", "Nashville", "Los Angeles", "New York"],
         datasets: [{
-            label: '# of Votes',
+            label: 'Number of Concerts',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
