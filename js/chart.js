@@ -13,16 +13,13 @@
            showConcert.then(function(results){
                 // var games = results.data.__metadata.title;
                 console.log(results);
-                vm.concerts = results.events;
+                var data = results.data;
 
                 
-                var cityCinci = results.events(function(number){
-                    return number.results.events;
+                var cityCinci = data.events(function(number){
+                    return number;
                 });
-           })
-        }       
-        
-        showInfo();
+                
 
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -62,6 +59,8 @@ var myChart = new Chart(ctx, {
     }
 });
 
-
+            })
+        }
+        showInfo();
     });
 })();
