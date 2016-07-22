@@ -4,31 +4,18 @@
 		.module('mapChart')
 		 .factory('API', function($http) {
 
-		 	// function getConcert(){
-		  //       var gettingInfo = $http({
-		  //         method: 'GET',
-		  //         url: 'http://api.jambase.com/events?zipCode=94054&api_key=p5wvt8qjumq3dr7wqwjaauuh',
-		  //         });
 
-		  //       return gettingInfo;
-   	// 		}
-		 
-   	// 		return {
-   	// 			getConcert:getConcert,
-   	// 		}
-
-   			function getCinci(){
-		        var gettingCinci = $http({
+   			function getCity(zipCode){
+		        var gettingCity = $http({
 		          method: 'GET',
-		          url: 'http://api.jambase.com/events?zipCode=45209&page=0&api_key=p5wvt8qjumq3dr7wqwjaauuh',
+		          url: 'http://api.jambase.com/events?zipCode='+zipCode+'&radius=30&page=0&api_key=p5wvt8qjumq3dr7wqwjaauuh',
 		          });
 
-		        return gettingCinci;
+		        return gettingCity;
    			}
 		 
    			return {
-   				// getConcert:getConcert,
-   				getCinci:getCinci,
+   				getCity,
    			}
 		 });	
 })();
